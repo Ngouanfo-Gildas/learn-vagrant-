@@ -1,0 +1,20 @@
+
+
+
+provisionner SHELL
+------------------------------------
+1 - Créer un dossier lab-8
+2 - Déplacez-vous dans ce dossier
+3 - Créez un vagrantfile afin de configurer 3 VMs à partir des informations suivantes
+	- Image de base: ubuntu/xenial64
+	- CPU: 1
+	- RAM: 1Go
+	- VM1: lb, IP: 10.0.0.10, exécuter le script suivant ...
+	- VM2: web1, IP: 10.0.0.11, exécuter le script suivant ...
+	- VM3: web2, IP: 10.0.0.12, exécuter le script suivant ...
+4 - N'hésitez pas à lire les scripts pour mieux comprendre les opérations exécutées
+5 - Accédez à l'interface web de chaque serveur (http://10.10.0.*) et vérifier que l'application fonctionne bien
+7 - Arretez la VM puis la supprimer (vagrant destroy -f)
+ 
+ Pour vérifier le vagrantfile (vagrant validate)
+

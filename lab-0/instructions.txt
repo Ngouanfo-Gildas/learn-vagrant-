@@ -1,0 +1,4 @@
+
+1 - Installation de virtualBox
+2 - Installation de vagrant
+3 - Vérifier la version de vagrant ($ vagrant --version)

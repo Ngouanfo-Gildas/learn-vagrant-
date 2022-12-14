@@ -1,0 +1,10 @@
+
+1 - Créer le dossier lab-1
+2 - Déplacez-vous dans ce dossier
+3 - Initialisez vagrant (vagrant init ubunut/trusty64)
+4 - Démarrez la VM (vagrant up)
+5 - Connectez vous en SSH (vagrant ssh)
+6 - Arretez la VM puis la supprimer (vagrant halt & vagrant destroy /vagrant -f destroy)
+
+vagrant status : pour afficher l'état de la ressource créée
+vagrant global-status : pour afficher l'état global des ressources créée par vagrant

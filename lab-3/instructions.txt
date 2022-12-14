@@ -1,0 +1,20 @@
+Comment créer un vagrantfile: vagrant init ou vagrant init -m 
+	- Ce fichier permet de décrire les caractéristiques des ressources à provisionner
+		- Disque    - Réseau
+		- CPU       - SSH
+		- RAM       - ...
+		
+Création d'un vagrantfile
+------------------------------------
+1 - Créer un dossier lab-3
+2 - Déplacez-vous dans ce dossier
+3 - Créez un vagrantfile afin de configurer la vm à partir des informations suivantes
+		- Image de base: CentOS 7 by Geerlingguy
+		- CPU: 2
+		- RAM: 2Go
+4 - Variabiliser les paramètres ci-dessus
+5 - Connectez vous en SSH (vagrant ssh) password=vagrant
+6 - Installer nginx
+7 - Arretez la VM puis la supprimer (vagrant destroy -f)
+ 
+ Pour vérifier le vagrantfile (vagrant validate)

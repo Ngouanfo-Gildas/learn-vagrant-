@@ -1,0 +1,26 @@
+Les plugins vagrant
+Vagrant fonctionne sur le principe de plugin model, ie toutes les fonctionnalités proviennent des plugin.
+on a des plugin interne (plugin core) à vagrant et les plugin developpés par la communauté
+Source des plugin: VagrantGems source
+
+La commande: vagrant plugin ..., permet de gérer les plugin
+
+
+------------------------------------
+1 - Créer un dossier lab-6
+2 - Déplacez-vous dans ce dossier
+3 - Créez un vagrantfile afin de configurer 3 VMs à partir des informations suivantes
+	- Image de base: ubuntu/xenial64
+	- CPU: 1
+	- RAM: 1Go
+	- VM1: lb, IP: 10.0.0.10
+	- VM2: web1, IP: 10.0.0.11
+	- VM3: web2, IP: 10.0.0.12
+4 - Variabiliser les paramètres ci-dessus
+5 - Installer et utiliser le plugin vagrant-hostsupdater afin que le fichier hosts de chaque VM corresponde à la réalité de leur nom et leur IP malgré les actions UP, RESUME et RELOAD (lisez la documentation pour mieux comprendre son utilité)
+	$ vagrant plugin install vagrant-hostsupdater
+6 - Lors du vagrant up, vérifiez que plugin est bien appelé
+7 - Connectez vous en SSH sur chacune d'elles
+8 - Arretez les VM puis les supprimer (vagrant destroy -f)
+ 
+ Pour vérifier le vagrantfile (vagrant validate)

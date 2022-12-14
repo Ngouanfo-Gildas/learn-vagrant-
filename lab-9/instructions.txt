@@ -1,0 +1,15 @@
+Installation d'nginx à l'aide d'ansible
+------------------------------------
+1 - Créer un dossier lab-9
+2 - Déplacez-vous dans ce dossier
+3 - Créez un vagrantfile afin de configurer une vm à partir des informations suivantes
+		- Image de base: ubuntu/xenial64
+		- CPU: 1
+		- RAM: 1 Go
+		- IP fixe privée: 10.0.0.10
+4 - Écrivez un playbook qui s'appelle nginx.yml qui permettra d'installer nginx et le démarrer
+5 - Vous devez vous baser sur ansible-local pour qui le playbook soit exécuté dans la VM
+6 - Vérifiez que la page par défaut de nginx est bien accessible via le navigateur
+7 - Arretez la VM puis la supprimer (vagrant destroy -f)
+ 
+ Pour vérifier le vagrantfile (vagrant validate)

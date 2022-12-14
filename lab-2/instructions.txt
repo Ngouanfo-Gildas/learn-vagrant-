@@ -1,0 +1,20 @@
+Créer une Vbox
+------------------------------------
+1 - Créer un dossier lab-2
+2 - Déplacez-vous dans ce dossier
+3 - Initialisez vagrant en utilisant la version 20190425.0.0 ubunut/trusty64
+    (vagrant init ubunut/trusty64 --box-version 20190425.0.0)
+4 - Démarrez la VM (vagrant up)
+5 - Connectez vous en SSH (vagrant ssh) password=vagrant
+6 - Installer Nginx
+    ( sudo apt-get update & sudo apt-get install nginx )
+7 - Démarrer Nginx et activer son démarrage au lancement de la VM
+    ( sudo systemctl start nginx & sudo systemctl enable nginx )
+8 - Créez une Vbox à partir de cette VM
+    ( vagrant package --output nginx.vbox)
+9 - Créez un compte sur vagrant cloud
+10 - Publiez votre Vbox sur vagrant cloud sous le nom <username>/nginx en version v1
+11 - Arretez la VM puis la supprimer (vagrant destroy -f)
+
+vagrant status : pour afficher l'état de la ressource créée
+vagrant global-status : pour afficher l'état global des ressources créée par vagrant

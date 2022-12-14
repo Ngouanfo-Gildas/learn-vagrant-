@@ -1,0 +1,16 @@
+Déploiement d'un serveur web
+------------------------------------
+1 - Créer un dossier lab-4
+2 - Déplacez-vous dans ce dossier
+3 - Créez un vagrantfile afin de configurer la vm à partir des informations suivantes
+		- Image de base: CentOS 7 by Geerlingguy
+		- CPU: 2
+		- RAM: 2Go
+		- IP fixe privée: 10.0.0.10
+4 - Variabiliser les paramètres ci-dessus
+5 - Connectez vous en SSH
+6 - Installer nginx
+7 - Vérifiez que vous avez accès à l'application depuis le PC local via http://10.0.0.10
+8 - Arretez la VM puis la supprimer (vagrant destroy -f)
+ 
+ Pour vérifier le vagrantfile (vagrant validate)

@@ -1,0 +1,15 @@
+
+# This  Vagrantfile a centos7 VM with 2 cpus, 2Gb of memory and a static ip address 
+
+CPU = 2
+RAM = 2048
+IP = "10.0.0.10"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "geerlingguy/centos7"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = RAM
+    v.cpus = CPU
+  end
+  config.vm.network "private_network", ip: IP
+end
